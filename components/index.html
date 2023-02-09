@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>✨ Simple Html,Css Layout Design - Compass Course 21 ✨</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<!--suppress CheckEmptyScriptTag -->
+<div class="body">
+    <div class="el NavBar">
+        <nav class="navSection">
+            <div class="NavLogo">
+                <h1 class="Logo">
+                    <a href="index.html"> LOGO </a>
+                </h1>
+            </div>
+            <ul class="navUL">
+                <li class="navLI">
+                    <a href="#"> Home </a>
+                </li>
+                <li class="navLI">
+                    <a href="#"> Contact </a>
+                </li>
+                <li class="navLI">
+                    <a href="#"> CV </a>
+                </li>
+                <div class="navAction">
+                    <button class="ActionNavButton">Join Newsletter</button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="el FunctionBar"></div>
+    <div class="el LeftPanel"></div>
+    <div class="el RightPanel"></div>
+    <div class="el Content">
+        <h1>Welcome to Simple HTML-CSS website</h1>
+        <p>This document was developed by:
+            <b>Othman Adi</b>
+        </p>
+
+        <hr/> <!--Horizontal Break-->
+
+        <button onclick="helloJS()">Trigger JS</button>
+
+        <br/> <!--New line Break-->
+
+        <button class="colorBtn" onclick="RandomColor()">Change Color</button>
+
+        <hr/>
+
+        <div class="TodoListWrapper">
+            <div class="todoListFunction">
+                <h5>Js Todolist</h5>
+                <input id="todoInput" type="text">
+                <button class="TodoSubmit">Add Todo ✏️</button>
+            </div>
+            <div class="todoListBody">
+                <ul class="myUL">
+                    <li>Example Todo</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="el Footer"></div>
+
+    <!--    JS Link-->
+    <script src="../backend/script.js"></script>
+</div>
+</body>
+</html>

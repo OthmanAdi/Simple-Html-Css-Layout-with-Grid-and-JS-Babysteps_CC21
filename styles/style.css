@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --BGColor: #FDEBED;
+}
+
+.body {
+    height: 100vh;
+    background: #85586F;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.NavBar {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.Footer {
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
+
+.FunctionBar {
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 1;
+}
+
+.LeftPanel {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 10;
+}
+
+.RightPanel {
+    grid-column: 11 / span 2;
+    grid-row: 2 / span 10;
+}
+
+.Content {
+    grid-column: 3 / span 8;
+    grid-row: 3 / span 9;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* calling class "el" to pass BGcolor and Box-shadow to all the children of the class "body" */
+.el {
+    box-shadow: 2px 4px 80px rgba(0, 0, 0, 0.35);
+    background: var(--BGColor);
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*button style*/
+.colorBtn {
+    font-size: 0.5em;
+}
+
+/*Styling the Page Nav*/
+.navSection {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navUL {
+    display: flex;
+    list-style: none;
+}
+
+.navLI {
+    margin-right: 15px;
+}
+
+.navLI a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.navLI a:hover {
+    color: mediumpurple;
+    transition: color 300ms;
+}
+
+.navLI a:visited {
+    color: #ab3f3f;
+}

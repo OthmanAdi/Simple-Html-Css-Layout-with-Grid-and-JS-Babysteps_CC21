@@ -26,15 +26,20 @@ let todoBodyUL = document.querySelector(".myUL");
 submitTodoBtn.addEventListener("click", () => {
 //call the input-field to extract the value
     let extractedText = todoInputField.value;
-    // console.log(extractedText)
-    let extracted2DText = document.createTextNode(extractedText);
+    if (extractedText === "") {
+        alert("Cannot Add Empty Input Field!");
+    } 
+    else {
+        // console.log(extractedText)
+        let extracted2DText = document.createTextNode(extractedText);
 
-    // create virtual ListItem to store the extracted2DText
-    let textNodeListItem = document.createElement("li");
+        // create virtual ListItem to store the extracted2DText
+        let textNodeListItem = document.createElement("li");
 
-    textNodeListItem.appendChild(extracted2DText);
+        textNodeListItem.appendChild(extracted2DText);
 
-    todoBodyUL.appendChild(textNodeListItem);
+        todoBodyUL.appendChild(textNodeListItem);
 
-    extractedText.value = ""; //resetting the input-field
+        extractedText.value = ""; //resetting the input-field
+    } //End of Else
 })
